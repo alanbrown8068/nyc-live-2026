@@ -119,7 +119,7 @@
 </svg>
 
 <header>
-  <img class="logo" src="logo.png" alt="NYC Live" onerror="this.style.display='none';document.getElementById('lf').style.display='inline-block';" />
+  <img class="logo" src="logo.png" alt="NYC Live" onerror="if(this.dataset.try!=='1'){this.dataset.try='1';this.src='Logo.png';}else{this.style.display='none';document.getElementById('lf').style.display='inline-block';}" />
   <span id="lf" class="logo-fallback" style="display:none">
     <svg width="220" height="150" viewBox="0 0 220 150" role="img" aria-label="NYC Live">
       <polyline points="42,118 70,62 92,92 116,40 150,92 178,68 200,118" fill="#fff" stroke="#1B2330" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
